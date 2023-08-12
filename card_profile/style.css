@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    color: #41364b;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: url('./images/Lake.png')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card{
+    height: 30rem;
+    width: 21rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(15px);
+}
+.card, .profile-image, .fab, .contac-me{
+    box-shadow: -0.1rem -0.1rem 0.3rem #41364b, 0.1rem 0.1rem 0.3rem;
+}
+.profile-image{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 40px;
+    color: #000;
+}
+.about {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.2rem;
+    color: #000;
+}
+.social-icons{
+    margin: 0.5rem;
+}
+.fab{
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #000;
+}
+.img {
+    height: 7rem;
+    width: 7rem;
+    background-image: url('./profile/profile_img.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.contac-me{
+    font-size: 15px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin-top: 0.5rem;
+    color: #000;
+}
+.fab:hover, .contac-me:hover{
+    box-shadow: -0.1rem -0.1rem 0.3rem #fff;
+    inset: 0.1rem 0.1rem 0.3rem #868686;
+    cursor: pointer;
+}
